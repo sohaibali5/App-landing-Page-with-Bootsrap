@@ -1,0 +1,39 @@
+first step is to add 
+index and style file
+then copy the code of starter template from https://getbootstrap.com/docs/5.0/getting-started/introduction/ and pasted in index <body>
+then provided icon link <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  in <head > 
+then downloaded SVG file and added it in our folder 
+then pasted font link in css file
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;200&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Poppins', sans-serif; */
+
+SSecond step navigation bar 	
+copied navbar code in body from 
+https://getbootstrap.com/docs/5.0/components/navbar/
+now to place in center remove fluid in <div class="container-fluid">
+for placing navigation in right sides put ms-auto in    <ul class="navbar-nav _______(ms-auto)        ">
+removing disable class in last element also /* tabindex="-1" aria-disabled="true"*/
+
+now adding some CSS on page in * and body tags 
+and we have to make navbar transparent so removing bg-light in    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+also  put navbar-dark inplace of navbar-light
+
+changing list disable element to download button and adding some external css in it by providng class(btn-0)
+
+now we will add our logo in place of Navbar element  <a class="navbar-brand" href="#">Navbar  </a> change it to
+                                                     <a class="navbar-brand" href="#">  <i class="fas fa-biking fa-2x"> </i> fitApp</a>
+
+change the font by appliying css to its parent div.navbar-brand 
+now giving  colour to .logo by adding class logo in its tag 
+
+now we have to add our text and  svg and two buttons  after nav  with in one grid system 
+text is set with existing classes of bootstrap
+while svg needs some external css(heigh,width) so putting in .img
+now they  needs to be set in center so we will use flex box property 
+
+now text and svg is set so we will add two buttons after our text<p>
+
+
